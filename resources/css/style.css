@@ -1,0 +1,436 @@
+/* ......................*/
+/* .......basic setup..........*/
+/* .................*/
+*{
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+}
+html{
+    font-weight: 300;
+    background-color:#ffff;
+    text-rendering: optimizeLegibility;
+    color: #555;
+    font-family: 'lato', 'Arial', 'sans-serif';
+    font-size: 20px;
+}
+.clearfix{zoom: 1;}
+.clearfix:after{
+    content: ".";
+    clear: both;
+    display: block;
+    height: 0px;
+    visibility: hidden;
+}
+ /* .......reusable component..........*/
+.row{
+    max-width: 1140px;
+    margin: 0 auto;
+}
+.box{
+    padding: 1%;
+}
+section{
+    padding: 80px 0;
+}
+/* .......headings.........*/
+h1{
+    margin-top: 0px;
+    margin-bottom: 20px;
+    text-transform:uppercase;
+    font-size: 34px;
+    font-weight: 300;
+    color: #fff;
+    word-spacing: 4px;
+    letter-spacing: 1px;
+}
+h2{
+    letter-spacing: 1px; 
+    text-transform:uppercase;
+    font-weight: 300;
+    font-size:180%;
+    word-spacing: 2px;
+    text-align: center;
+    margin-bottom: 30px;
+}
+h2:after{
+display: block;
+width: 100px;
+background-color: orange;
+content: " ";
+height: 2px;
+margin: 0 auto;
+margin-top: 30px;
+}
+h3{
+    text-transform:uppercase;
+    font-weight: 300;  
+    margin-bottom: 15px;
+    font-size: 110%;
+}
+.box p{
+    line-height: 145%;
+    font-size: 90%;
+}   
+/* .......paragraph..........*/
+.long-copy{
+    line-height: 145%;
+    width: 70%;
+    margin-left: 15%;
+}
+/* .......icons..........*/
+.icon-big {
+font-size: 400%;
+color: orange;
+display: block;
+margin-bottom: 10px;
+
+}
+/* .......features..........*/
+.section-features .long-copy{
+    margin-bottom: 30px;
+}
+
+/* .......bottons..........*/
+.btn:link,
+.btn:visited,
+input[type=submit]
+{
+    display: inline-block;
+    text-decoration: none;
+    font-weight: 300;
+    padding: 10px 30px;
+    border-radius: 200px; 
+    transition: background-color 0.5s, border 0.5s, color 0.5s;
+}
+.btn-full:link,
+.btn-full:visited,
+input[type=submit]
+    {
+    background-color: orange;
+    border: 1px solid orange;
+    color:white;
+    margin-right: 15px;
+}
+.btn-ghost:link,
+.btn-ghost:visited
+    {
+    border: 1px solid orange;
+    color: orange;
+}
+.btn:hover,
+.btn:active,
+input[type=submit]:hover,
+input[type=submit]:active{
+background-color: rgb(206, 134, 2);
+}
+.btn-full:hover,
+.btn-full:active,
+input[type=submit]
+    {
+    border: 1px solid orange;
+}
+.btn-ghost:hover,
+.btn-ghost:active
+    {
+    border: 1px solid orange;
+    color: #fff;
+    }
+/* .......header..........*/
+header{
+   background-image:linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)), url(img/hero.jpg);
+    height: 100vh;
+    background-position: center;
+    background-size: cover;
+    background-attachment: fixed;
+}
+.hero-text-box{
+    position: absolute;
+    width: 1140px;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50% ,-50%); 
+}
+.logo{
+    height: 100px;
+    width: auto;
+    float: left;
+    margin-top: 20px;
+    margin-left: 100px;
+}
+.main-nav{
+    float: right;
+    list-style: none;
+    margin-top: 50px;
+    margin-right:100px; 
+}
+.main-nav li{
+    display: inline-block;
+    margin-left: 20px;
+}
+.main-nav li a:link,
+.main-nav li a:visited {
+    padding: 5px 0;
+    text-decoration: none;
+    color: #fff;
+    text-transform: uppercase;
+    font-size: 90%;
+    border-bottom: 2px solid transparent;
+    transition: border-bottom 0.3s;  
+}
+.main-nav li a:active,
+.main-nav li a:hover{
+border-bottom: 2px solid orange;
+}
+/* .......meals..........*/
+.section-meal{
+    padding:  0; 
+}
+.meals-showcase{
+    list-style: none;
+    width: 100%;
+}
+.meals-showcase li{
+    float: left;
+    display: block;
+    width: 25%;
+}
+.meal-photo{
+    width: 100%;
+    margin: 0;   
+}
+.meal-photo img{
+    width: 100%;
+    height:auto ; 
+}
+/* .......how it works..........*/
+.section-step{
+    background-color: rgb(238, 238, 238); 
+}
+.step-box:first-child{
+    text-align: right;
+    padding-left :3% ;
+    margin-top: 30px; 
+}
+.step-box:last-child{
+    padding-left :3% ;
+    margin-top: 70px; 
+}
+.app-screen{
+    width:40%;
+}
+.work-step  {
+    margin-bottom: 50px;
+}
+.work-step  {
+    display:inline-block;
+    color: orange;
+    border: 2px solid #e67e22;
+    border-radius: 50%;
+    width: 50px;
+    height: 50px;
+    text-align: center;
+    padding: 5px;
+    float: none;
+    font-size: 150%;
+    margin-right: 25px;
+}
+.btnapp:link,
+.btnapp:visited{
+    border: 0;
+}
+.btnapp img{
+height: 50px;
+width: auto;
+margin-right: 10px;
+}
+/* .......cities..........*/
+.box img{
+    width: 100%;
+    height: auto;
+    margin-bottom: 15px;
+}
+.citiesfeatures{
+    margin-bottom: 5px;
+}
+.icon-small{
+    display: inline-block;
+    width: 30px;
+    text-align: center;
+    color: #e67e22;
+    font-size: 120%;
+}
+/* .......limks..........*/
+a:link,
+a:visited
+ {
+color: #e67e22;
+border-bottom: 1px solid  #e67e22;
+padding-bottom: 1px;
+text-decoration: none;
+transition: border-bottom 0.2s color 0.2s;
+}
+a:active,
+a:hover{
+color: #555;
+border-bottom: 1px solid  transparent;
+}
+/* .......testimonials..........*/
+.testimonials  {
+background-image:linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)), url(img/back-customers.jpg);
+height: 100vh;
+background-size: cover;
+color: #fff;
+background-attachment: fixed;
+}
+blockquote{
+    padding: 2%;
+    font-style: italic;
+    line-height: 145%;
+    position: relative;
+    margin-top: 40px;
+}
+blockquote:before{
+    content: "\201c";
+    font-size: 500%;
+    position: absolute;
+    top: -5px; ;
+    left: -5px;
+}
+cite{
+    display: block;
+    font-size: 90%;
+    margin-top: 25px;
+}
+cite img{
+    border-radius: 50%;
+    margin-right: 10Px;
+    height: 50px;
+    vertical-align: middle;
+}
+/* .......testimonials..........*/
+.sectionplan{
+    background-color: rgb(238, 238, 238); 
+}
+.plan-box{
+    background-color: #fff;
+    border-radius: 5px;
+    width: 90%;
+    margin-left:5%;
+}
+.plan-box div:first-child{
+    background-color: rgb(250, 250, 250);
+    border-top-left-radius: 5px;
+    border-top-right-radius: 5px;
+}
+.plan-box div:last-child{
+text-align: center;
+border: 0;
+}
+.plan-box div{
+    border-bottom: 1px solid  rgb(214, 214, 211);
+    padding: 15px;
+}
+.priceplan{
+font-size: 300%;
+margin-bottom: 10px;
+font-weight: 100;
+color:#e67e22;
+}
+.priceplan span {
+font-size: 30%;
+font-weight: 300;
+}
+.priceplanyear{
+font-size: 80%;
+}
+.plan-box ul{
+list-style: none;
+}
+.plan-box ul li{
+padding: 5px 0;
+}
+/* .......testimonials..........*/
+.contactform {
+width: 60%;
+margin: 0 auto;
+}
+input[type=text], 
+input[type=email],
+select,
+textarea{
+width: 100%;
+padding: 7px;
+border-radius: 3px;
+border: 1px solid rgb(224, 224, 224);
+}
+textarea{
+    height: 100px;
+}
+input[type=checkbox]{
+    margin: 10px 5px 10px 0;
+}
+*:focus{outline: none;}
+/* .......testimonials..........*/
+footer{
+    background-color: rgb(77, 75, 75);
+    padding: 50px;
+    font-size: 80%; 
+}
+.footernav{
+list-style: none;
+float: left;
+}
+.sociallinks{
+list-style: none;
+float: right;
+}
+.footernav li,
+.sociallinks li{
+display: inline-block;
+margin-right:20px; 
+}
+.footernav li:last-child,
+.sociallinks li:last-child{
+margin-right:0; 
+}
+.footernav li a:link,
+.footernav li a:visited,
+.sociallinks li a:link,
+.sociallinks li a:visited{
+text-decoration: none;
+border: 0px;
+color: #888;
+transition:  color 0.3s;
+}
+.sociallinks li a:link,
+.sociallinks li a:visited{
+font-size: 150%;
+}
+.footernav li a:hover,
+.footernav li a:active{
+color:white;
+}
+footer p{
+color: #888; 
+text-align: center;  
+margin-top: 20px;
+}
+.ion-social-facebook,
+.ion-social-twitter,
+.ion-social-googleplus,
+.ion-social-instagram{
+transition: color 0.3s;
+}
+.ion-social-facebook:hover{
+color: blue;
+}
+.ion-social-twitter:hover{
+color: rgb(61, 61, 255);
+}
+.ion-social-googleplus:hover{
+color: rgb(252, 80, 0);
+}
+.ion-social-instagram:hover{
+color: pink  
+}
